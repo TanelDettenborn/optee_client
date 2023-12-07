@@ -735,7 +735,7 @@ static void set_ta_path(void)
 			char full_path[PATH_MAX] = { 0 };
 
 			path_len = snprintf(full_path, PATH_MAX, "%s/%s", new_path,
-						supplicant_params.ta_dir);
+					    supplicant_params.ta_dir);
 			if (path_len < 0 || path_len >= PATH_MAX)
 				goto err_path;
 
